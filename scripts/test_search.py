@@ -8,6 +8,7 @@ class TestSearch:
     def setup(self):
         self.driver = init_driver()
         self.page = Page(self.driver)
+        print("hello")
 
     @pytest.mark.parametrize("keyword", ["xiaoming", "123", "hello"])
     def test_search(self, keyword):
